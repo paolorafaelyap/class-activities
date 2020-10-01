@@ -1,0 +1,15 @@
+.bold{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.boldtwo:hover{
+    font-size: 20px;
+    color: red;
+    background-color: black;
+}
+
+.boldthree:active{
+    display: inline-block;
+    transform: translateX(1px) translatey(1px);
+}
