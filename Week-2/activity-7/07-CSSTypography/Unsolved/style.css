@@ -1,0 +1,21 @@
+h1{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 20px;
+}
+
+.blurb1{
+    color: blue;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+
+}
+
+.blurb2{
+    font-size: 24px; 
+}
+
+.blurb3{
+    line-height: 50px;
+}
