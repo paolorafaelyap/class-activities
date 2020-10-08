@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <script type="text/javascript">
+        //Defines array of choices
+        var choices= ["R", "P", "S"];
+       //win conditions
+       var win = 0;
+       var loss = 0;
+       var tie = 0;
+       //'for' loop to repeat the rock,paper,scissors process ten times for a best of 10
+       for (var i=0; i < 10; i++)
+        {
+            //variable for user choice
+            var userChoice=prompt("Choose one of the three: " + choices.join(','))
+            //ensures all choices all inputs will be uppercase
+            userChoice=userChoice.toUpperCase();
+            //randomizes index number
+            indexNumber= Math.floor(Math.random() * choices.length);
+            //random index number will choose which array value the Computer will have
+            var computerChoice=choices[indexNumber];
+            //conditions to ensure that user's choice will always be R, P, or S
+            if (userChoice == "R" || userChoice == "P" || userChoice== "S")
+            {
+                alert("You chose " + userChoice);
+            }
+            
+            //alert pop-up to tell us what the computer's choice was.
+                alert("Computer chose " + computerChoice);
+            //conditional statements to determine what is considered a win, loss, and tie.
+            if ((userChoice == "R" && computerChoice == "S") || (userChoice == "P" && computerChoice == "R") || (userChoice == "S" && computerChoice == "P"))
+            {
+                alert("You Win!");
+                win++;
+            }
+                else if (userChoice == computerChoice)
+            {
+                alert("It's a tie!");
+                tie++;
+            }
+                else
+            {
+                alert("You Lose!");
+                loss++;
+            }
+            //keeps track of who wins, losses, and ties
+            alert("Wins: " + win + "\nLosses: " + loss + "\nTies: " + tie );
+        }
+
+    </script>
+
+    
+</body>
+</html>
