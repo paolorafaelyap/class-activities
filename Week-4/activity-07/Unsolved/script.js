@@ -7,5 +7,6 @@ htwo.innerText= "Testing";
 document.body.appendChild(htwo);
 
 document.body.style.textAlign = 'center';
-//var headers = document.getElementbyId(heads);
-//heads.style.textAlign = 'center';
+
+var pic = document.createElement("img");
+
