@@ -52,31 +52,31 @@ $('.btn').on('click', function(){
         {
             var result = parseInt(firstNumber) + parseInt(secondNumber);
             console.log(result);
-            document.getElementById("result").innerHTML = result;
+            $("#result").html(result); //equivalent to document.getElementById().innerHTML
         } 
         else if (operator == "minus")
         {
             var result = parseInt(firstNumber) - parseInt(secondNumber);
             console.log(result);
-            document.getElementById("result").innerHTML = result;
+            $("#result").html(result);
         }
         else if (operator == "times")
         {
             var result = parseInt(firstNumber) * parseInt(secondNumber);
             console.log(result);
-            document.getElementById("result").innerHTML = result;
+            $("#result").html(result);
         }
         else if (operator == "divide")
         {
             var result = parseInt(firstNumber) / parseInt(secondNumber);
             console.log(result);
-            document.getElementById("result").innerHTML = result;
+            $("#result").html(result);
         }
         else if (operator == "power")
         {
             var result = parseInt(firstNumber) ** parseInt(secondNumber);
             console.log(result);
-            document.getElementById("result").innerHTML = result;
+            $("#result").html(result);
         }
         
     }
@@ -88,13 +88,17 @@ $('.btn').on('click', function(){
         operator = "";
         op = "";
         result="";
-        document.getElementById("result").innerHTML = result;
+        $("#result").html(result);
 
     }
 
-    document.getElementById("first-number").innerHTML = firstNumber;
-    document.getElementById("operator").innerHTML = op;
-    document.getElementById("second-number").innerHTML = secondNumber;
+    //document.getElementById("first-number").innerHTML = firstNumber;
+    //document.getElementById("operator").innerHTML = op;
+    //document.getElementById("second-number").innerHTML = secondNumber;
+
+    $("#first-number").html(firstNumber);
+    $("#operator").html(op);
+    $("#second-number").html(secondNumber);
     
 })
 // variables for onclick events for number buttons
